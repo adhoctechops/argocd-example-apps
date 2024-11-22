@@ -3,9 +3,6 @@ kind: Deployment
 metadata:
   name: guestbook-ui
   namespace: guestbook-ui
-  annotations:
-    argocd-image-updater.argoproj.io/image-list: "peamsam/nginx"
-    argocd-image-updater.argoproj.io/peamsam/nginx.update-strategy: "latest"
 spec:
   replicas: 1
   revisionHistoryLimit: 3
